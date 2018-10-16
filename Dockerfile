@@ -12,11 +12,10 @@ apt-get install git
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-RUN npm install --unsafe-perm --save-exact -g protractor \
-
+RUN npm install --unsafe-perm --save-exact -g protractor selenium-webdriver \
   && npm update \
 # Get the latest WebDriver Manager
-  && webdriver-manager update
+  && webdriver-manager update \
 ENV NODE_PATH /usr/local/lib/node_modules
 
 # Installing node modules
