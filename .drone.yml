@@ -7,5 +7,3 @@ pipeline:
     repo: registry.learnindialearn.in:5000/liltestingbase
     insecure: true
     auto_tag: true    
-    when:
-      branch: master
