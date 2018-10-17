@@ -12,7 +12,7 @@ apt-get install git
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
-RUN npm install --unsafe-perm --save-exact -g protractor selenium-webdriver \
+RUN npm install --unsafe-perm --save-exact -g protractor \
   && npm update \
 # Get the latest WebDriver Manager
   && webdriver-manager update
