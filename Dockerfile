@@ -15,7 +15,7 @@ RUN export JAVA_HOME
 RUN npm install --unsafe-perm --save-exact -g protractor \
   && npm update \
 # Get the latest WebDriver Manager
-  && webdriver-manager update
+  && webdriver-manager --versions.chrome 2.41 update
   
 ENV NODE_PATH /usr/local/lib/node_modules
 
