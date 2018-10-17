@@ -6,7 +6,7 @@ RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' >> /etc/
 
 RUN apt-get update && \
 apt install -y -t jessie-backports openjdk-8-jre-headless ca-certificates-java && \
-apt-get install -y 	 wget openjdk-8-jre && \
+apt-get install -y xvfb wget openjdk-8-jre && \
 apt-get install git
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
