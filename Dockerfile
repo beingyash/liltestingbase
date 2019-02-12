@@ -2,7 +2,7 @@ FROM node:8.15.0-jessie
 
 #Install required applications
 
-#RUN echo 'deb http://httpredir.debian.org/debian jessie-backports main' >> /etc/apt/sources.list.d/jessie-backports.list
+RUN echo 'deb http://ftp.jp.debian.org/debian jessie main' >> /etc/apt/sources.list.d/jessie-backports.list
 
 RUN apt-get update && \
 apt install -y -t openjdk-8-jre-headless ca-certificates-java && \
